@@ -1,5 +1,5 @@
 import { TestScheduler } from 'jest';
-import Triangle from './../src/triangle.js';
+import Triangle from './../src/js/triangle.js';
 
 describe('Triangle', () => {
 
@@ -16,7 +16,6 @@ test('should correctly determine whether three lengths are not a triangle', () =
   const notTriangle = new Triangle(3,9,22);
   expect(notTriangle.checkType()).toEqual("not a triangle");
 });
-
 
 test('should correctly determine whether three lengths make a scalene triangle', () => {
   const scalTriangle = new Triangle(4,5,7)
